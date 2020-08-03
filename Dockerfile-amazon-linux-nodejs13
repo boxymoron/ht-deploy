@@ -1,0 +1,5 @@
+FROM amazonlinux:latest
+
+RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && yum -y update && yum -y install tar gzip gcc-c++ make nodejs bind-utils postgresql-devel && npm install -g n && rm /bin/node && ln -s /usr/local/bin/node /bin/node && n 13
+
+RUN node --version
