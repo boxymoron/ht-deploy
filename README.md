@@ -12,10 +12,10 @@ Changes to the Sails app's docker image are made in /home/sails/ht-sails-app/Doc
 
 `./startContainer.sh`
 
-#Then from within the container you can start Sails: 
+# Then from within the container you can start Sails: 
 
 `DEBUG=false NODE_ENV=production AWS_S3_BUCKET=hero-traveler node --experimental-modules app.js --redis`
 
-#or to start with the postgres native bidings
+# or to start with the postgres native bidings
 
 `DEBUG=false NODE_ENV=production AWS_S3_BUCKET=hero-traveler NODE_PG_FORCE_NATIVE=true PGSSLMODE=disable node --experimental-modules app.js --redis`
